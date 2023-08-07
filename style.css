@@ -1,26 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.container{
+
+.container {
     background: black;
     height: 100vh;
     width: 100%;
     padding: 10px;
 }
-.qr-code{
+
+.qr-code {
     background: #fff;
     width: fit-content;
     padding: 30px;
     margin: 100px auto 0;
 }
-.qr-code p{
+
+.qr-code p {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.qr-code input{
+
+.qr-code input {
     padding: 5px 10px;
     font-size: 15px;
     border: 1px solid rgb(46, 46, 139);
@@ -28,7 +32,8 @@
     outline: none;
     margin-bottom: 10px;
 }
-.qr-code button{
+
+.qr-code button {
     padding: 10px 10px;
     outline: none;
     background: rgb(25, 25, 194);
@@ -39,17 +44,43 @@
     margin-top: 10px;
     cursor: pointer;
 }
-#imgBox{
+
+#imgBox {
     text-align: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s;
 }
-#imgBox.show-img{
+
+#imgBox.show-img {
     max-height: 200px;
     margin: 20px 0px;
 }
-#imgBox.show-img img{
+
+#imgBox.show-img img {
     border: 1px solid black;
     padding: 5px;
+}
+
+.error {
+    border-color: red !important;
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
