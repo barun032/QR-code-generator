@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    background: black;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+.qr-code{
+    background: #fff;
+    width: fit-content;
+    padding: 30px;
+    margin: 100px auto 0;
+}
+.qr-code p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.qr-code input{
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid rgb(46, 46, 139);
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.qr-code button{
+    padding: 10px 10px;
+    outline: none;
+    background: rgb(25, 25, 194);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#imgBox{
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgBox.show-img{
+    max-height: 200px;
+    margin: 20px 0px;
+}
+#imgBox.show-img img{
+    border: 1px solid black;
+    padding: 5px;
+}
